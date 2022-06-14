@@ -1,4 +1,6 @@
-import Button from "./components/Button/Button"
+import React from "react";
+import ReactDOM from "react-dom";
+import Button from "./components/Button/Button";
 
 class HelloMessage extends React.Component {
   render() {
@@ -7,11 +9,8 @@ class HelloMessage extends React.Component {
         Hello {this.props.name}
         <Button></Button>
       </div>
-    )
+    );
   }
 }
 
-ReactDOM.render(
-  <HelloMessage name="Taylor" />,
-  document.getElementById("hello-example")
-)
+ReactDOM.render(<HelloMessage name="Kin" />, document.getElementById("root"));
