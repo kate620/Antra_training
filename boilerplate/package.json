@@ -8,7 +8,8 @@
     "start": "echo Hello Start",
     "build-babel": "babel src -d lib",
     "build-webpack": "webpack --config webpack.config.js",
-    "build": "npm run build-babel && npm run build-webpack"
+    "build": "npm run build-babel && npm run build-webpack",
+    "lint": "eslint src/**"
   },
   "author": "kate",
   "license": "ISC",
@@ -19,6 +20,11 @@
     "@babel/preset-react": "^7.17.12",
     "babel-loader": "^8.2.5",
     "eslint": "^8.17.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.5.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.1",

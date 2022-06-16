@@ -1,7 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Button from "./components/Button/Button";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Button from './components/Button/Button';
 
+/* eslint-disable */
 class HelloMessage extends React.Component {
   render() {
     return (
@@ -12,5 +13,5 @@ class HelloMessage extends React.Component {
     );
   }
 }
-
-ReactDOM.render(<HelloMessage name="Kin" />, document.getElementById("root"));
+/* eslint-enable */
+ReactDOM.render(<HelloMessage name="Kin" />, document.getElementById('root'));
